@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
-* main - this function prints size multiple variables  
+* main - this function prints size multiple variables
 *
 * Return: if this function works properly it returnes 0
 */

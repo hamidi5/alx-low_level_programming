@@ -7,32 +7,31 @@
  * number that has been randomly generated,
  * and it will also indicate whether the digit
  * is greater than 5, less than 6, or equal to 0.
- *
- * Return: Always 0.
+ * Return: Always 0 (Successs)
  */
+
 int main(void)
 {
-	int n;
+int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-	if ((n % 10) > 5)
-	{
-	printf("Last digit of %d is %d and is greater than 5\n",
-		n, n % 10);
-	}
-	else if ((n % 10) < 6 && (n % 10) != 0)
-	{
-	printf("Last digit of %d is %d and is less than 6 and not 0\n",
-		n, n % 10);
-	}
-	else
-	{
-	printf("Last digit of %d is %d and is 0\n",
-		n, n % 10);
-	}
+if (n == 0)
+{
+printf("%i is zero\n", n);
+}
 
-	return (0);
+else if (n < 0)
+{
+printf("%i is negative\n", n);
+}
+
+else
+{
+printf("%i is positive\n", n);
+}
+
+return (0);
 
 }

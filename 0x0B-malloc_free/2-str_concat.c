@@ -27,23 +27,23 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1)
 	{
-		while (i < len1)
+		while (x < len1)
 		{
-			s3[i] = s1[i];
-			i++;
+			s3[x] = s1[x];
+			x++;
 		}
 	}
 
 	if (s2)
 	{
-		while (i < (len1 + len2))
+		while (x < (len1 + len2))
 		{
-			s3[i] = s2[j];
-			i++;
-			j++;
+			s3[x] = s2[y];
+			x++;
+			y++;
 		}
 	}
-	s3[i] = '\0';
+	s3[x] = '\0';
 
 	return (s3);
 }

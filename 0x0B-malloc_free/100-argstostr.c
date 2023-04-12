@@ -41,7 +41,7 @@ char *argstostr(int ac, char **av)
 			y++;
 			z++;
 		}
-		arg[k] = '\n';
+		arg[z] = '\n';
 		z++;
 		x++;
 	}
